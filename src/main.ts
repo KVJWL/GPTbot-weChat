@@ -3,23 +3,23 @@ import {PuppetPadlocal} from "wechaty-puppet-padlocal";
 import QRCode from "qrcode";
 import { ChatGPTBot } from "./bot.js";
 const chatGPTBot = new ChatGPTBot();
-
-// const bot =  WechatyBuilder.build({
-//   name: "wechat-assistant", // generate xxxx.memory-card.json and save login data for the next login
-  // puppetOptions: {
-  //   uos: true, // 开启uos协议
-  // },
-  // puppet: "wechaty-puppet-wechat",
-// });
-
+//使用uos协议有封号危险
+const bot =  WechatyBuilder.build({
+  name: "wechat-assistant", // generate xxxx.memory-card.json and save login data for the next login
+  puppetOptions: {
+    uos: true, // 开启uos协议
+  },
+  puppet: "wechaty-puppet-wechat",
+});
+//推荐使用付费PuppetPadlocal服务
 // const token: string = "puppet_padlocal_72ee99189d5648b9baf70c2d24f7d808"; // padlocal token
 
-const token: string = "puppet_padlocal_033ca17230264abdb7a38d04f37c1243"; // padlocal token
-const puppet = new PuppetPadlocal({ token }); 
-const bot =  WechatyBuilder.build({
-  name: "chatgptBot",
-  puppet,
-});
+// const token: string = " "; // padlocal token
+// const puppet = new PuppetPadlocal({ token }); 
+// const bot =  WechatyBuilder.build({
+//   name: "chatgptBot",
+//   puppet,
+// });
 
 // get a Wechaty instance
 
