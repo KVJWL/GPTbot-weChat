@@ -47,3 +47,7 @@ openAIProxy: <Your Proxy>
 
 ## Start Project
 npm run dev
+
+##FQA  
+
+if your openai account return 400 Please replace "text-davinci-002-render" with "text-davinci-002-render-next". Its location is in "node_modules/chatgpt".
