@@ -37,3 +37,7 @@ chatPrivateTiggerKeyword: ""
 You can configure in config.yaml:
 
 openAIProxy: <Your Proxy>
+
+# Start Project
+npm run dev
+
